@@ -1,0 +1,185 @@
+body,ul,div,span,li
+{
+	margin: 0px;
+	padding:0px;
+	font:400 14px/1.5 "Hiragino Sans GB","Microsoft YaHei",hei,Arial,"Lucida Grande",Verdana;
+}
+
+b, em, i {
+    font-style: normal;
+    font-weight: 400;
+}
+
+.pnl_indentity_wrap
+{
+	position:relative;
+	width:80%;
+	margin: 10px auto;
+}
+
+.pnl_indentity_wrap .input_identity,.pnl_indentity_wrap .pnl_indentity
+{
+	width:100%;
+	height:30px;
+	line-height: 30px;
+	border:1px solid #ccc;
+	padding:0px;
+	padding-left: 2px;
+}
+
+.pnl_indentity_wrap .input_identity
+{
+	display: none;
+}
+
+.pnl_indentity_wrap .pnl_indentity
+{
+	position: absolute;
+	left:0px;
+	top:0px;
+}
+
+.pnl_identity_keyboard
+{
+	position: fixed;
+	left: 0px;
+	bottom: 0px;
+	z-index: 3016;
+	-webkit-tap-highlight-color: transparent;
+    -webkit-user-select: none;
+    width:100%;
+    background-color:#fff;
+    color:#4E5F71;
+}
+
+.pnl_identity_keyboard .cm-keyboard-bar {
+    background-color: #e2e2e2;
+    text-align: right;
+    padding-right: 10px;
+    height: 44px;
+    line-height: 44px;
+    border-top: 1px solid #dbdbdb;
+}
+
+@-webkit-keyframes twinkle
+{
+	from {opacity: 0}
+	to {opacity: 1}
+}
+
+.identity-cursor {
+    -webkit-animation: twinkle 1s infinite;
+    color: rgba(0,0,0,1);
+    position: absolute;
+    top:4px;
+    margin-left: -1px;
+}
+
+.cm-keyboard-list
+{
+	font-size: 24px;
+	list-style: none;
+}
+
+.cm-keyboard-list:before, .cm-keyboard-list:after {
+    content: "";
+    display: table;
+}
+
+.cm-keyboard-list li {
+    float: left;
+    text-align: center;
+    width: 33%;
+    line-height: 54px;
+    border: 1px solid #dbdbdb;
+    border-width: 1px 1px 0 0;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+.cm-keyboard-list li:nth-of-type(3n+3)
+{
+	width:34%;
+	border-right: none;
+}
+
+.cm-keyboard-list .icon-del {
+    top: 2px;
+}
+
+.icon-del {
+    width: 16px;
+    height: 16px;
+    display: inline-block;
+    line-height: 1;
+    border: 1px solid #333;
+    border-left: none;
+    position: relative;
+    border-radius: 0 4px 4px 0;
+    margin-left: 6px;
+}
+
+.icon-del::before {
+    content: "";
+    width: 12px;
+    height: 12px;
+    border: 1px solid #333;
+    border-width: 1px 0 0 1px;
+    -webkit-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+    position: absolute;
+    left: -6px;
+    top: 2px;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+.icon-del .icon-close {
+    width: 16px;
+    height: 16px;
+    position: absolute;
+    top: 2px;
+}
+
+.icon-del .icon-close::before {
+    -webkit-transform: rotate(45deg);
+}
+.icon-del .icon-close::before, .icon-del .icon-close::after {
+    background-color: #333;
+    width: 1px;
+    height: 10px;
+    content: "";
+    top: 1px;
+    left: -1px;
+    position: absolute;
+}
+
+.icon-del .icon-close::after {
+    -webkit-transform: rotate(-45deg);
+}
+.icon-del .icon-close::before, .icon-del .icon-close::after {
+    background-color: #333;
+    width: 1px;
+    height: 10px;
+    content: "";
+    top: 1px;
+    left: -1px;
+    position: absolute;
+}
+
+.cm-keyboard-list:after {
+    clear: both;
+}
+.cm-keyboard-list:before, .cm-keyboard-list:after {
+    content: "";
+    display: table;
+}
+
+.cm-keyboard-list li:active {
+	background-color:#efefef
+}
+
+.cm-keyboard-list li:last-of-type,.cm-keyboard-list li:nth-last-of-type(3) {
+	background-color:#e2e2e2
+}

@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Identity Card Input</title>
+	<link rel="stylesheet" type="text/css" href="css/identityCard.css">
+	<meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no" />
+</head>
+<body>
+	<div class="pnl_indentity_wrap" id="indentityCard" data-nums="" data-index="0">
+		<input type="text" readonly="" placeholder="证件号码" class="input_identity" value="4">
+		<div class="pnl_indentity">
+			<span class="identity-cursor">|</span>
+		</div>
+	</div>
+
+	<br/><br/>
+	<div class="pnl_indentity_wrap" id="indentityCard2" data-nums="" data-index="0">
+		<input type="text" readonly="" placeholder="证件号码" class="input_identity" value="4">
+		<div class="pnl_indentity">
+			<span class="identity-cursor">|</span>
+		</div>
+	</div>
+	
+	<br/><br/>
+	<div class="pnl_indentity_wrap" id="indentityCard3" data-nums="" data-index="0">
+		<input type="text" readonly="" placeholder="证件号码" class="input_identity" value="4">
+		<div class="pnl_indentity">
+			<span class="identity-cursor">|</span>
+		</div>
+	</div>
+
+
+
+	<section class="pnl_identity_keyboard">
+		<div class="cm-keyboard-bar">
+			<span class="btn-secondary js_ok">完成</span>
+		</div>
+		<ul class="cm-keyboard-list js_num_item ">
+			<li class="item-num">1</li>
+			<li class="item-num">2</li>
+			<li class="item-num">3</li>
+			<li class="item-num">4</li>
+			<li class="item-num">5</li>
+			<li class="item-num">6</li>   
+			<li class="item-num">7</li>
+			<li class="item-num">8</li>
+			<li class="item-num">9</li>
+			<li class="item-num">X</li>
+			<li class="item-num">0</li>
+			<li class="item-del js_item_del">
+				<span class="icon-del">
+					<i class="icon-close"></i>
+				</span>
+			</li>
+		</ul>
+	</section>
+	
+	<script type="text/javascript" src="js/indentityCard.js"></script>
+	
+</body>
+</html>
+<!--
+	by loya
+	div模拟输入框输入
+	上方提示输入字符
+	调用方式identityCard.init(id)
+-->
